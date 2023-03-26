@@ -1,6 +1,6 @@
 <div class="container" *ngIf="hidden">
     <mat-card>
-        <mat-card-title>Quiz Festivel!</mat-card-title>
+        <mat-card-title >Drag & Drop Quizz competition!</mat-card-title>
         <mat-card-content>
         
             
@@ -8,10 +8,14 @@
 
        
     </mat-card-content>
+    <div class="name col-md-4 my-3">
+        <label for="">ENTER YOUR NAME</label>
+        <input #name type="text" class="form-control"><br>
     <div class="button">
-        <button mat-raised-button color="accent" (click)="quizStart()" type="submit" mat-button>Start</button>
+        <button mat-raised-button color="warn" (click)="quizStart()" type="submit" mat-button>START</button>
     </div>
-    </mat-card>
+    </div>
+    </mat-card> 
 </div>
 <br>
 
@@ -54,8 +58,8 @@
         <div class="d-flex justify-content-between p-3">
             
             <div class="quiz-header">
-                <h4 style="font-family: cursive;">Staterd The Quiz!</h4>
-                <span style="font-style: italic;">Welcome {{name}}</span>
+                <h1 style="font-family: 'Times New Roman', Times, serif;"><b>ANGULAR & TYPESCRIPT QUESTIONS</b></h1>
+                <span style="font-style: italic;">Welcome {{name}} </span>
             </div>
         </div>
 
@@ -77,7 +81,7 @@
                 <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             
-            <div class="question"  >
+            <div class="question" >
                 
                 <!-- <div class="card"> -->
                     <h3>{{questionList[currentQuestion]?.questionText}}</h3>
@@ -110,14 +114,24 @@
 
                 </ol>
             </div>                  
-            <div class="button bn">
-            <div class="d-flex justify-content-between">
-                <button [disabled]="currentQuestion===0"mat-raised-button color="accent" class="btn" (click)="previousQuestion()">Previous</button>
+             <div class="button bn">
+            <!-- <div class="d-flex justify-content-between">
+                <button [disabled]="currentQuestion===0"mat-raised-button color="accent" class="btn" (click)="previousQuestion()">Previous</button> -->
                 
-                <button class="btn"mat-raised-button color="accent" (click)="resetQuiz()">Reset</button>
+                <div class="d-flex justify-content-between">
+                    <button [disabled]="currentQuestion===0"class="btn"(click)="previousQuestion()"><i style="font-size:50px;color: black;" class="fa">&#xf0a5;</i>
+                    </button>
 
-                <button class="btn" mat-raised-button color="accent" (click)="nextQuestion()">Next</button>
-            </div>
+                <button class="btn"mat-raised-button color="primary" (click)="resetQuiz()">Reset</button> 
+                <button class="btn" (click)="nextQuestion()"><i style="font-size:50px;color: black;" class="fa">&#xf0a4;</i>
+                </button>
+                
+            </div> 
+
+           
+
+
+
         </div>
         </ng-container>
 

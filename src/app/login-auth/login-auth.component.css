@@ -2,6 +2,7 @@
     min-width: 150px;
     max-width: 500px;
     width: 100%;
+    
   }
   
   .example-full-width {
@@ -13,17 +14,24 @@
     display: flex;
     justify-content: center;
     margin: 100px 0px;
+    
   }
 
   .login_form .mat-form-field {
     width: 100%;
     min-width: 300px;
+    font-size: large;
   }
 
   mat-card-title,
   mat-card-content {
     display: flex;
     justify-content: center;
+    box-shadow: 0cap;
+    font-style: italic;
+    background-color: rgb(252, 187, 108);
+
+  
   }
 
   .error {
@@ -37,3 +45,6 @@
     display: flex;
     justify-content: flex-end;
   }
+.mat-card{
+  background-color:beige;
+}

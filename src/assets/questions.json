@@ -54,7 +54,7 @@
             "explanation": "interfaces are typically used to list the properties and methods for an object"
         },
         {
-            "questionText": "How else can Array<number> be written in TypeScript?",
+            "questionText": "4.How else can Array<number> be written in TypeScript?",
             "options": [{
                     "text": "a) @number"
                 },
@@ -72,7 +72,7 @@
             "explanation": "number[] is another way of writing Array<number> in TypeScript"
         },
         {
-            "questionText": "In which of these does a class take parameters?",
+            "questionText": "5.In which of these does a class take parameters?",
             "options": [{
                     "text": "a) constructor",
                     "correct": true
@@ -90,7 +90,7 @@
             "explanation": "a constructor is used by a class to take in parameters"
         },
         {
-            "questionText": "Which is NOT an access modifier?",
+            "questionText": "6.Which is NOT an access modifier?",
             "options": [{
                     "text": "a) private"
                 },
@@ -108,7 +108,7 @@
             "explanation": "async is not used as an access modifier type in TypeScript"
         },
         {
-            "questionText": "Which keyword allows us to share information between files in TypeScript?",
+            "questionText": "7.Which keyword allows us to share information between files in TypeScript?",
             "options": [{
                     "text": "a) import"
                 },
@@ -126,7 +126,7 @@
             "explanation": "the export keyword allows for the information to be transmitted between files"
         },
         {
-            "questionText": "Which is an array method to generate a new array based on a condition?",
+            "questionText": "8.Which is an array method to generate a new array based on a condition?",
             "options": [{
                     "text": "a) filter",
                     "correct": true
@@ -144,7 +144,7 @@
             "explanation": "filter is a method used to conditionally create a new array"
         },
         {
-            "questionText": "How is a property accessible within a class?",
+            "questionText": "9.How is a property accessible within a class?",
             "options": [{
                     "text": "a) Using this.propertyName",
                     "correct": true
@@ -157,6 +157,24 @@
                 },
                 {
                     "text": "d) Arrow function"
+                }
+            ],
+            "explanation": "this.propertyName is the way to access a specific property within a class"
+        },
+        {
+            "questionText": "10.which of the following is correct about Typescript?",
+            "options": [{
+                    "text": "a) angular is based on typescript",
+                    "correct": true
+                },
+                {
+                    "text": "b) This is superset of javascripit"
+                },
+                {
+                    "text": "c) Typescript is maintained by microsoft"
+                },
+                {
+                    "text": "d) all of the above"
                 }
             ],
             "explanation": "this.propertyName is the way to access a specific property within a class"

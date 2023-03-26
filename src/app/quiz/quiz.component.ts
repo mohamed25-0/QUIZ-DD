@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, ViewChild,ElementRef} from '@angular/core';
 // import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 import { AuthGuardService } from '../auth/auth-guard.service';
@@ -31,6 +31,7 @@ export class QuizComponent implements OnInit {
    quizStart() {
     this.hidden=false;
     this.hidden1=true;
+    localStorage.setItem("name",this.namekey.nativeElement.value);
    }
   //  MoviesList = [
   //   '// comment',
@@ -65,6 +66,7 @@ export class QuizComponent implements OnInit {
   interval$: any;
   progress: string = "0";
   isQuizCompleted : boolean = false;
+  @ViewChild('name') namekey!: ElementRef
   constructor(private questionService: AuthGuardService) { }
 
   ngOnInit(): void {
@@ -110,7 +112,7 @@ export class QuizComponent implements OnInit {
         this.getProgressPercent();
       }, 1000);
 
-      this.points -= 10;
+      
     }
   }
   startCounter() {
